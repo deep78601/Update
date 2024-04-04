@@ -1,10 +1,10 @@
 module.exports.config = {
   name: "prefix",
-  version: "1.0.0",
+  version: "1.0.1",
   hasPermssion: 0,
-  credits: "ManhG",
-  description: "Xem prefix của BOT",
-  commandCategory: "Dành cho Admin",
+  credits: "Mr Chand",
+  description: "See the bot prefix",
+  commandCategory: "For admin",
   usages: "",
   cooldowns: 5,
 };
@@ -12,34 +12,28 @@ module.exports.config = {
 module.exports.handleEvent = async ({ event, api, Threads }) => {
   var { threadID, messageID, body, senderID } = event;
   //if (senderID == global.data.botID) return;
-  if ((this.config.credits) != "ManhG") { return api.sendMessage(`Sai credits!`, threadID, messageID)}
+  if ((this.config.credits) != "Mr Chand") { return api.sendMessage(`Changed credits!`, threadID, messageID)}
   function out(data) {
     api.sendMessage(data, threadID, messageID)
   }
   var dataThread = (await Threads.getData(threadID));
   var data = dataThread.data; 
   const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-  var arr = ["mpre","mprefix","prefix", "dấu lệnh", "prefix của bot là gì","daulenh", "duong", "what prefix", "freefix", "what is the prefix", "bot dead", "bots dead", "where prefix", "what is bot", "what prefix bot", "how to use bot" ,"how use bot", "where are the bots","bot not working","bot is offline","where prefix","prefx","prfix","prifx","perfix","bot not talking","where is bot"];
+
+  var arr = ["mpre","mprefix","prefix", "dấu lệnh", "prefix của bot là gì","daulenh", "duong"];
   arr.forEach(i => {
     let str = i[0].toUpperCase() + i.slice(1);
     if (body === i.toUpperCase() | body === i | str === body) {
 const prefix = threadSetting.PREFIX || global.config.PREFIX;
       if (data.PREFIX == null) {
-        return out(`This Is My Prefix ⇉ [ ${prefix} ]                       💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞ Jagdeep☜ 💫
-
-🖤〠  🖤
-
-
-😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ https://www.facebook.com/jagdeep.448
-
-🍁♠️✨`)
+        return out(`️️️️️️️️️️️️️️️️️️️️️️️️️𝐘𝐄𝐒 𝐁𝐎𝐒𝐒 💖 𝐘𝐄𝐇  𝐌𝐄𝐑𝐀 𝐏𝐑𝐄𝐅𝐈𝐗 𝐇𝐀𝐈 ✅ ⇉ [ ${prefix} ]`)
       }
-      else return out('️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️Yeh ]Mera\nPrefix\nhai]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n➢ 👉🏻👉🏻 ..' + data.PREFIX)
+      else return out(`️️️️️️️️️️️️️️️️️️️️️️️️️Yes Boss 💖 Yehh Mera Prefix Hai ✅ ⇉ 👉🏻  `    + data.PREFIX )
     }
 
   });
 };
 
 module.exports.run = async({ event, api }) => {
-    return api.sendMessage("error", event.threadID)
-}
+    return api.sendMessage(`️️️️️️️️️️️️️️️️️️️️️️️️️This is my prefix⇉ [ ${global.config.PREFIX} ]`, event.threadID)
+    }
