@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("jagdeep singh")==0 || event.body.indexOf("jagdeep")==0 || event.body.indexOf("ਜਗਦੀਪ ਸਿੰਘ󱢏")==0 || event.body.indexOf("@ਜਗਦੀਪ ਸਿੰਘ")==0) {
+	if (event.body.indexOf("@ਪੰਗੇ　ਨਾ　ਲੈ　ਸੋਹਣੀਏ　ਮਹਿੰਗੇ ਪੈ　ਜਾਣਗੇ　ਪਾਪੀ　ਨਰਕਾਂ ਨੂੰ　ਚੱਲੇ　ਨਾਲ　ਲੈ　ਜਾਣਗੇ")==0 || event.body.indexOf("@ਪੰਗੇ　ਨਾ　ਲੈ　ਸੋਹਣੀਏ　ਮਹਿੰਗੇ ਪੈ　ਜਾਣਗੇ　ਪਾਪੀ　ਨਰਕਾਂ ਨੂੰ　ਚੱਲੇ　ਨਾਲ　ਲੈ　ਜਾਣਗੇ ")==0 || event.body.indexOf("@Deep Randhawa")==0 || event.body.indexOf("Deep Randhawa")==0) {
 		var msg = {
 				body: "🙈",
 				attachment: fs.createReadStream(__dirname + `/noprefix/dk.mp3`)
