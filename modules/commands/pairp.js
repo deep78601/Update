@@ -2,7 +2,7 @@ module.exports.config = {
     name: "purpose",
     version: "7.3.1",
     hasPermssion: 0,
-    credits: " Mirrykal",///don't change my Credit Coz i Edit 
+    credits: "DEEP",///don't change my Credit Coz i Edit 
     description: "Get Pair From Mention",
     commandCategory: "img",
     usages: "[@mention]",
@@ -22,7 +22,7 @@ module.exports.onLoad = async() => {
     const dirMaterial = __dirname + `/cache/canvas/`;
     const path = resolve(__dirname, 'cache/canvas', 'lovep.png');
     if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-    if (!existsSync(path)) await downloadFile("https://i.ibb.co/ct9Pwyf/image.jpg", path); 
+    if (!existsSync(path)) await downloadFile("https://i.imgur.com/VKvcNUA.jpg", path); 
 }
 
 async function makeImage({ one, two }) {
@@ -45,7 +45,7 @@ async function makeImage({ one, two }) {
     
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
-    batgiam_img.composite(circleOne.resize(200, 200), 60, 180).composite(circleTwo.resize(200, 200), 610, 180);
+    batgiam_img.composite(circleOne.resize(236, 230), 46, 170).composite(circleTwo.resize(200, 200), 618, 180);
     
     let raw = await batgiam_img.getBufferAsync("image/png");
     
@@ -71,4 +71,4 @@ module.exports.run = async function ({ event, api, args }) {
         const one = senderID, two = mention[0];
         return makeImage({ one, two }).then(path => api.sendMessage({ body: "", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
-      }
+                                                                         }
