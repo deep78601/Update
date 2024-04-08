@@ -107,7 +107,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "😡😡") || (event.body.toLowerCase() == "😡😡😡") || (event.body.toLowerCase() == "😠😠") || (event.body.toLowerCase() == "🤬🤬") || (event.body.toLowerCase() == "🤬🤬🤬")) {
-     return api.sendMessage("️🥺 M toh Sirf Mazak Kr Rha Tha🥺. Gussa Mat Karo. Ek Chummi Lo aur Shant Raho 😘", threadID);
+     return api.sendMessage("️ਪੈਟਰੋਲ ਗੱਡੀ ਤੇ ਫੁਕਰੀ ਨੱਡੀ ਨੂੰ ਕੌਈ  ਕੌਈ ਸੰਭਾਲ ਸਕਦਾ😑😑", threadID);
    };
 
    if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
@@ -150,8 +150,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("ht nu mein kheda tanu hug karli jheda hta 😄🤣", threadID);
    };
    
-   if ((event.body.toLowerCase() == "😂") || (event.body.toLowerCase() == "😁") || (event.body.toLowerCase() == "😆") || (event.body.toLowerCase() == "🤣") || (event.body.toLowerCase() == "😸") || (event.body.toLowerCase() == "😹")) {
-     return api.sendMessage("🤣", threadID);
+   if ((event.body.toLowerCase() == "😂😂") || (event.body.toLowerCase() == "😁😁") || (event.body.toLowerCase() == "😆🤣") || (event.body.toLowerCase() == "🤣🤣") || (event.body.toLowerCase() == "😸😸") || (event.body.toLowerCase() == "😹😹")) {
+     return api.sendMessage("DAND NA KAD PILE PILE 🙄", threadID);
    };
 
    if ((event.body.toLowerCase() == "🥰🥰") || (event.body.toLowerCase() == "😍😍") || (event.body.toLowerCase() == "😍😍😍") || (event.body.toLowerCase() == "🥰🥰🥰")) {
@@ -189,7 +189,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
-      body: `🎀👑${name}🎀🍫\n\n ${rand}`
+      body: `🎀👑${name}🎀🍫,  \n\n💞\n   ${rand}  💞\n\nᎢɪᴍᴇ  🍁»» ${time}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
