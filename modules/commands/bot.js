@@ -107,7 +107,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "😡😡") || (event.body.toLowerCase() == "😡😡😡") || (event.body.toLowerCase() == "😠😠") || (event.body.toLowerCase() == "🤬🤬") || (event.body.toLowerCase() == "🤬🤬🤬")) {
-     return api.sendMessage("️ਪੈਟਰੋਲ ਗੱਡੀ ਤੇ ਫੁਕਰੀ ਨੱਡੀ ਨੂੰ ਕੌਈ  ਕੌਈ ਸੰਭਾਲ ਸਕਦਾ😑😑", threadID);
+     return api.sendMessage("️ਲਵ ਯੂ ਮੇਰੀ ਜਾਨ ਗੁੱਸਾ ਕਰਗੀ 😘😘", threadID);
    };
 
    if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
