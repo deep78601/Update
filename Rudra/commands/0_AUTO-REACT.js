@@ -1,4 +1,4 @@
-//@jagdeep-singh3608
+ //@jagdeep-singh3608
 ////////////////////////////////////////////////////////
 /////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT JAGDEEP SINGH
 module.exports.config = {
